@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Import Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <!-- Import stylesheets and js functionalities -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Bootstrap/js/jquery-3.0.0.min.js"></script>
+<body>
+
+<!-- Modal for Sofia -->
+<div class="modal fade" id="Sofia" tabindex="-1"	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center" id="myModalLabel">Laid-back Bulgarian City</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+						<div class="col-sm-6">
+					<img class="img-responsive" src="sofiagirl.jpeg"></div>
+					<div class="col-sm-6">
+				<h4><em>	Bulgaria's laid-back capital, Sofia is often overlooked by tourists heading straight to the coast, but they're missing something special. It's no grand metropolis, but it's a largely modern, youthful city, while its old east-meets-west atmosphere is still much evident – a scattering of onion-domed churches, Ottoman mosques and stubborn Red Army monuments shares the skyline with vast malls and glassy five-star hotels. </em></h4></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal for Zagreb -->
+<div class="modal fade" id="Zagreb" tabindex="-1"	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center" id="myModalLabel">Pearl of Croatia</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="zagrebguy.jpg">
+				<h4><em>	Zagreb has culture, arts, music, architecture, gastronomy that make a quality capital city – it's no surprise that the number of visitors has risen sharply in the last couple of years. Croatia's coastal attractions aside, Zagreb has finally been discovered as a popular destination in its own right.</em></h4>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal for Bucharest -->
+<div class="modal fade" id="Bucharest" tabindex="-1"	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title text-center" id="myModalLabel">Historical yet Charming</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="bucharestgirl.jpg">
+				<h4><em>	Romania’s capital gets a bad rap, but in fact it's dynamic, energetic and quite fun. It’s where still-unreconstructed communism meets unbridled capitalism; where the soporific forces of the EU meet the passions of the Balkans and Middle East. Many travellers give the city just a night before heading to Transylvania, but we think that’s not enough. Budget at least a few days to take in museums, stroll the parks and hang out at trendy cafes. </em></h4>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- where the body begins -->
+<div class="container">
+	<div class="row">
+	<!-- Divide into two columns -->
+		<div class="col-sm-6">
+			<br/>
+			<!-- Import image -->
+			<img src="parisalley.jpg" class="img-circle" alt="Udacity Logo" width="300px" height="140px">
+			<!-- Titie and subtitles-->
+		</div>		
+		<div class="col-sm-6 text-center">
+			<br/>
+			<br/>
+			<h2>A Retreat to East Europe</h2>
+			<h4>Mark's guide to the secret zone</h4>
+		</div>
+	</div>
+	<!--
+	<div class="row">
+		<div class="col-sm-12">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+		</div>
+	</div>
+	-->
+	<br/>
+	<br/>
+	<!-- Import main picture with link to website -->
+	<div class="row">
+		<a href="https://www.lonelyplanet.com/eastern-europe"> 
+		<img src="hiddeneurope.jpg" class="img-responsive img-thumbnail" alt="Beautiful Town" width="900px" height="200px"></a>
+	</div>
+	<br/>
+	
+	<!-- Subtitle -->
+	<div class="row">
+		<h4 class="text-center"><strong>Signature Destinations</strong></h4>
+	</div>
+	<br/>
+	<!-- Import images with modals -->
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="sofia.jpeg" class="img-responsive img-thumbnail" alt="Soria, Bulgaria" height="220" data-toggle="modal" data-target="#Sofia">
+			<br/>
+			<h4 class="text-center"><strong>Sofia, Bulgaria</strong></h2>
+		</div>
+		<div class="col-sm-4">
+			<img src="zagreb.jpeg" class="img-responsive img-thumbnail" alt="Oh Sofia!" height="220" data-toggle="modal" data-target="#Zagreb">
+			<br/>
+			<h4 class="text-center"><strong>Zagreb, Croatia</strong></h2>
+		</div>
+		<div class="col-sm-4">
+			<img src="bucharest.jpg" class="img-responsive img-thumbnail" alt="Oh Sofia!" height="220" data-toggle="modal" data-target="#Bucharest">
+			<br/>
+			<h4 class="text-center"><strong>Bucharest, Romania</strong></h2>
+		</div>
+	</div>
+	<!-- Insert footnote and email link -->
+	<div class="row text-center">
+		<br/>
+		<br/>
+		<address><h5 class="text center">All rights reserved by <a href="mailto:markwang@utexas.edu">Mark Wang</a></h5></address>
+	</div>
+ </div>
+</body>
+</html>
